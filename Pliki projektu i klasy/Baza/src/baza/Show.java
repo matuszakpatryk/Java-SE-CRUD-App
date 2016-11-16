@@ -131,11 +131,12 @@ class Show
         Scanner s = new Scanner(System.in);
         do
         {
+            System.out.println("Lata muszą być w przedziale 2002-2012");
             System.out.println("Podaj rok rozpoczęcia:");
             st = s.next();
             System.out.println("Podaj rok zakończenia:");
             en = s.next();
-        } while((isInteger(st)==0) || (isInteger(en)==0));
+        } while(((isInteger(st)==0) || (isInteger(en)==0)));
         System.out.println("Podaj województwo (opcjonalnie):");
         woj = s.next();
         start = Integer.parseInt(st);

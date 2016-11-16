@@ -88,12 +88,17 @@ class ShowCount
         {
             return 0;
         }
+        int flaga=0;
         for(int i=0; i<licznik;i++)
         {
             if(!name[i].equals(tabela))
             {
-                return 0;
+                flaga++;
             }
+        }
+        if(flaga==0)
+        {
+            return 0;
         }
 
         try

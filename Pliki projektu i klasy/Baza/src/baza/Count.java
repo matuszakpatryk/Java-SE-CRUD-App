@@ -778,11 +778,13 @@ class Count
         Scanner s = new Scanner(System.in);
         do
         {
+            System.out.println("Lata muszą być w przedziale 2002-2012");
             System.out.println("Podaj rok rozpoczęcia:");
             st = s.next();
             System.out.println("Podaj rok zakończenia:");
+            System.out.println("Pamiętaj, że różnica między latami musi być równa 1!");
             en = s.next();
-        } while(((isInteger(st)==0) || (isInteger(en)==0)) || ((Integer.parseInt(en))-(Integer.parseInt(st))>1));
+        } while(((isInteger(st)==0) || (isInteger(en)==0)) || ((Integer.parseInt(en))-(Integer.parseInt(st))!=1));
 
         try
         {
