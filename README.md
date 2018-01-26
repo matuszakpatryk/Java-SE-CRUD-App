@@ -1,3 +1,3 @@
-# Work-with-SQL-Base
+# Java SE CRUD App.
 
-Java CRUD app.
+Application written in Java SE executing CRUD operations using SQL database.
